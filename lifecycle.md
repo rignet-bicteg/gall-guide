@@ -1,6 +1,6 @@
 # App Lifecyle and State
 
-Once you register an app with Gall using `|start`, Gall calls specific arms of the app when the app changes.
+Once you register an app with Gall using [`|rein`](https://urbit.org/docs/userspace/dist/tools#rein), Gall calls specific arms of the app when the app changes.
 
 In this lesson, you'll see everything about how Gall handles compilation, state, resource initialization, and app upgrades. The main action here will take place in the `on-init`, `on-save`, and `on-load` arms.
 
@@ -101,7 +101,7 @@ Let's register the above application with Gall:
 + /~zod/home/2/app/lifecycle/hoon
 
 ::  register the app with Gall
-> |start %lifecycle
+> |rein %home [& %lifecycle]
 >=
 activated app home/lifecycle
 %path: no matches for /~zod/home/~2020.6.11..15.15.55..b397/lib/default-agen/hoon
